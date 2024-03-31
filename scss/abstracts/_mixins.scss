@@ -1,0 +1,24 @@
+@mixin escalar{
+    @keyframes escalado {
+        0% {
+            transform: scale(1.0);
+        }
+        100%{
+            transform: scale(1.1);
+        }
+    }
+}
+
+@mixin escalado_suave{
+    @include escalar;
+    animation-name: escalado;
+    animation-duration: 1s;
+    cursor: pointer;
+    animation-fill-mode: forwards; //con esto la animacion queda en la posicion final
+}
+
+@mixin flex-center-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
