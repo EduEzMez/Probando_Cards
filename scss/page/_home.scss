@@ -7,8 +7,8 @@
 
     .card{
         @include flex-center-center;
-        width: 80%;
-        height: 300px;
+        width: 300px;
+        height: 100px;
         background-color: $color_secundario;
         border-radius: 30px;
         border: 9px black solid;
@@ -19,9 +19,11 @@
         @include escalado_suave;
     }
 
-    h1{
+    
+
+    h2{
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 10rem;
+        font-size: auto;
     }
 }
 
